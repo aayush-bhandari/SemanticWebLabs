@@ -1,0 +1,67 @@
+<http://utdallas/semclass/person#StanleyKubrick>
+        <http://www.w3.org/2001/vcard-rdf/3.0#FN>
+                "KubrickStanley" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#Family>
+                "Kubrick" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#Given>
+                "Stanley" .
+
+<http://utdallas/semclass/person#PeterGeorge>
+        <http://www.w3.org/2001/vcard-rdf/3.0#FN>
+                "GeorgePeter" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#Family>
+                "George" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#Given>
+                "Peter" .
+
+<http://utdallas/semclass/person#AnthonyBurgess>
+        <http://www.w3.org/2001/vcard-rdf/3.0#FN>
+                "BurgessAnthony" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#Family>
+                "Burgess" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#Given>
+                "Anthony" .
+
+<http://utdallas/semclass/book#redAlert>
+        a       <http://utdallas/semclass/book#> ;
+        <http://purl.org/dc/elements/1.1/creator>
+                <http://utdallas/semclass/person#PeterGeorge> ;
+        <http://purl.org/dc/elements/1.1/date>
+                "1958" ;
+        <http://purl.org/dc/elements/1.1/language>
+                "English" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Red Alert" .
+
+<http://utdallas/semclass/book#aClockworkOrange>
+        a       <http://utdallas/semclass/book#> ;
+        <http://purl.org/dc/elements/1.1/creator>
+                <http://utdallas/semclass/person#AnthonyBurgess> ;
+        <http://purl.org/dc/elements/1.1/date>
+                "1962" ;
+        <http://purl.org/dc/elements/1.1/language>
+                "English" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "A Clockwork Orange" .
+
+<http://utdallas/semclass/movie#aClockworkOrange>
+        a       <http://utdallas/semclass/movie#> ;
+        <http://purl.org/dc/elements/1.1/date>
+                "1971" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "A Clockwork Orange" ;
+        <http://utdallas/semclass/movie#directedby>
+                <http://utdallas/semclass/person#StanleyKubrick> ;
+        <http://utdallas/semclass/movie#movieBasedOn>
+                <http://utdallas/semclass/book#aClockworkOrange> .
+
+<http://utdallas/semclass/movie#drStrangeLove>
+        a       <http://utdallas/semclass/movie#> ;
+        <http://purl.org/dc/elements/1.1/date>
+                "1964" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Dr. Strange Love" ;
+        <http://utdallas/semclass/movie#directedby>
+                <http://utdallas/semclass/person#StanleyKubrick> ;
+        <http://utdallas/semclass/movie#movieBasedOn>
+                <http://utdallas/semclass/book#redAlert> .

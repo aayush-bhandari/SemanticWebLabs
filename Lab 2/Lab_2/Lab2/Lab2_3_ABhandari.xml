@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns:j.0="http://utdallas/semclass/book#"
+    xmlns:j.1="http://utdallas/semclass/movie#">
+  <rdf:Description rdf:about="http://utdallas/semclass/movie#drStrangeLove">
+    <rdf:type rdf:resource="http://utdallas/semclass/movie#"/>
+    <dc:title>Dr. Strange Love</dc:title>
+    <dc:date>1964</dc:date>
+    <j.1:movieBasedOn>
+      <rdf:Description rdf:about="http://utdallas/semclass/book#redAlert">
+        <rdf:type rdf:resource="http://utdallas/semclass/book#"/>
+        <dc:creator>
+          <rdf:Description rdf:about="http://utdallas/semclass/person#PeterGeorge">
+            <vcard:Family>George</vcard:Family>
+            <vcard:Given>Peter</vcard:Given>
+            <vcard:FN>GeorgePeter</vcard:FN>
+          </rdf:Description>
+        </dc:creator>
+        <dc:title>Red Alert</dc:title>
+        <dc:date>1958</dc:date>
+        <dc:language>English</dc:language>
+      </rdf:Description>
+    </j.1:movieBasedOn>
+    <j.1:directedby>
+      <rdf:Description rdf:about="http://utdallas/semclass/person#StanleyKubrick">
+        <vcard:Family>Kubrick</vcard:Family>
+        <vcard:Given>Stanley</vcard:Given>
+        <vcard:FN>KubrickStanley</vcard:FN>
+      </rdf:Description>
+    </j.1:directedby>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://utdallas/semclass/movie#aClockworkOrange">
+    <rdf:type rdf:resource="http://utdallas/semclass/movie#"/>
+    <dc:title>A Clockwork Orange</dc:title>
+    <dc:date>1971</dc:date>
+    <j.1:movieBasedOn>
+      <rdf:Description rdf:about="http://utdallas/semclass/book#aClockworkOrange">
+        <rdf:type rdf:resource="http://utdallas/semclass/book#"/>
+        <dc:creator>
+          <rdf:Description rdf:about="http://utdallas/semclass/person#AnthonyBurgess">
+            <vcard:Family>Burgess</vcard:Family>
+            <vcard:Given>Anthony</vcard:Given>
+            <vcard:FN>BurgessAnthony</vcard:FN>
+          </rdf:Description>
+        </dc:creator>
+        <dc:title>A Clockwork Orange</dc:title>
+        <dc:date>1962</dc:date>
+        <dc:language>English</dc:language>
+      </rdf:Description>
+    </j.1:movieBasedOn>
+    <j.1:directedby rdf:resource="http://utdallas/semclass/person#StanleyKubrick"/>
+  </rdf:Description>
+</rdf:RDF>
