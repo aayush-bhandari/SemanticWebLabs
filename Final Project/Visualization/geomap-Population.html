@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+      <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+   	<script type="text/javascript">
+    	$.ajaxSetup({
+  			 async: false
+ 		});
+		
+
+
+    </script> 
+    <script type="text/javascript">
+    	var mydata = null;
+		$.getJSON('https://api.myjson.com/bins/pzl5z', function(data) {
+    			console.log(data)
+    			mydata = data;
+		});
+      google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyDhjYXXTRxA219Kn12cqG4qIrbp79T-Mno'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+       
+        var data = new google.visualization.DataTable();
+	       	data.addColumn('string', 'State');
+	        data.addColumn('number', 'Difference');
+	        //data.addColumn('number', 'Year 2008');
+	    
+	     	var s,y1,y2,diff;
+	        for(var i = 0 ; i<mydata.length;i++){
+	        	s = mydata[i].state.value
+	        	y1 = parseInt(mydata[i].veteran_population_1.value)
+	        	y2 = parseInt(mydata[i].veteran_population_2.value)
+	        	diff = y1-y2;
+	        	data.addRows([[s,diff]])
+	        }
+
+        var options = {
+        				 region: "US",
+        				 resolution: "provinces"
+        			};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+  	<div><h3>Veteran poulation difference for FY2007 and FY2008</h3></div>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

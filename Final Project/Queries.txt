@@ -1,0 +1,71 @@
+1. Total expenditure comparison
+
+SELECT ?state ?exp_year1 ?exp_year2
+ WHERE { 
+    {
+        SELECT ?state (sum(xsd:decimal(?exp_yr1)) AS ?exp_year1) 
+    	WHERE {
+            ?s <http://data-gov.tw.rpi.edu/vocab/p/1152/total_expenditure> ?exp_yr1. 
+            ?s <http://data-gov.tw.rpi.edu/vocab/p/1152/state> ?state.
+        } group by ?state order by ?state
+    }
+    {
+        SELECT ?state1 (sum(xsd:decimal(?exp_yr2)) AS ?exp_year2) 
+    	WHERE {
+            ?s <http://data-gov.tw.rpi.edu/vocab/p/1154/total_expenditure> ?exp_yr2. 
+            ?s <http://data-gov.tw.rpi.edu/vocab/p/1154/state> ?state1.
+        } group by ?state1 order by ?state1
+    }
+  FILTER (?state = ?state1) 
+}
+
+2. veteran_population comparison
+
+SELECT ?state ?veteran_population_1 ?veteran_population_2
+ WHERE { 
+    {
+        SELECT ?state (sum(xsd:decimal(?vp1152)) AS ?veteran_population_1) 
+    	WHERE {
+            ?s <http://data-gov.tw.rpi.edu/vocab/p/1152/veteran_population> ?vp1152. 
+            ?s <http://data-gov.tw.rpi.edu/vocab/p/1152/state> ?state.
+        } group by ?state order by ?state
+    }
+    {
+        SELECT ?state1 (sum(xsd:decimal(?vp1154)) AS ?veteran_population_2) 
+    	WHERE {
+            ?s <http://data-gov.tw.rpi.edu/vocab/p/1154/veteran_population> ?vp1154. 
+            ?s <http://data-gov.tw.rpi.edu/vocab/p/1154/state> ?state1.
+        } group by ?state1 order by ?state1
+    }
+  FILTER (?state = ?state1) 
+}
+
+3. Present average wait time for veterans in every state.
+
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?state ?veteran_population_2 (xsd:decimal(?specialty_care_seen)+xsd:decimal(?primary_care_seen) AS ?Total_cases)
+ WHERE { 
+    {
+        SELECT ?state (sum(xsd:decimal(?vp1154)) AS ?veteran_population_2) 
+    	WHERE {
+            ?s <http://data-gov.tw.rpi.edu/vocab/p/1154/veteran_population> ?vp1154. 
+            ?s <http://data-gov.tw.rpi.edu/vocab/p/1154/state> ?state.
+        } group by ?state order by ?state
+    }
+   
+   {
+        SELECT ?state1 (sum(xsd:decimal(?scs30)) AS ?specialty_care_seen) (sum(xsd:decimal(?pcs30)) AS ?primary_care_seen) 
+    	WHERE {
+            ?s1 <http://data-gov.tw.rpi.edu/vocab/p/1202/specialty_care_seen_in_30_days> ?scs30. 
+       		?s1 <http://data-gov.tw.rpi.edu/vocab/p/1202/primary_care_seen_in_30_days> ?pcs30. 
+            ?s1 <http://data-gov.tw.rpi.edu/vocab/p/1202/state> ?state1.
+        } group by ?state1 order by ?state1
+    }
+  FILTER (?state = ?state1) 
+}
+}
+
+
+
+

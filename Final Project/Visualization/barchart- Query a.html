@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+	<html>
+	<head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript">
+    	$.ajaxSetup({
+  			 async: false
+ 		});
+	   // var mydata = [{"k": "RAM" , "v":0.515625},{"k": "Camera" , "v":0.515625},{"k": "Design" , "v":0.05},{"k": "Processor" , "v": 0}];
+	   /*var mydata = [{
+        "state": { "type": "literal" , "value": "ALABAMA" } ,
+        "veteran_population_2": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": 413578.90 } ,
+        "specialty_care_seen": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "294" } ,
+        "primary_care_seen": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "298" }
+      } ,
+      {
+        "state": { "type": "literal" , "value": "ALASKA" } ,
+        "veteran_population_2": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": 75596.75 } ,
+        "specialty_care_seen": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "91" } ,
+        "primary_care_seen": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "99" }
+      } ];*/
+		var mydata = null;
+		$.getJSON('https://api.myjson.com/bins/pzl5z', function(data) {
+    			console.log(data)
+    			mydata = data;
+		});
+
+
+    </script>
+    <script type="text/javascript">
+		google.load('visualization', '1.0', {'packages':['corechart', 'bar']});
+		google.setOnLoadCallback(drawChart);
+	
+		function drawChart() {
+
+	        var data = new google.visualization.DataTable();
+	       	data.addColumn('string', 'State');
+	        data.addColumn('number', 'Year 2007');
+	        data.addColumn('number', 'Year 2008');
+	    
+	     	var s,y1,y2;
+	        for(var i = 0 ; i<mydata.length;i++){
+	        	s = mydata[i].state.value
+	        	y1 = parseInt(mydata[i].veteran_population_1.value)
+	        	y2 = parseInt(mydata[i].veteran_population_2.value)
+	        	data.addRows([[s,y1,y2]])
+	        }
+	        var options = {'title':'Veteran population comparison for FY2007 and FY2008', 'width':1000, 'height':900, 
+
+		        hAxis: {
+		          title: 'Veteran Population',
+		          minValue: 0,
+		          textStyle: {
+		            bold: true,
+		            fontSize: 12,
+		            color: '#4d4d4d'
+		  
+		          },
+		          titleTextStyle: {
+		            bold: true,
+		            fontSize: 18,
+		            color: '#4d4d4d'
+		          },
+		          gridlines: {count: 8 }
+		        },
+		        vAxis: {
+		          title: 'State',
+		          textStyle: {
+		            fontSize: 10,
+		            color: '#848484'
+		          },
+		          titleTextStyle: {
+		            fontSize: 14,
+		            color: '#848484'
+		          },
+
+		        }
+	    	};
+
+	    	
+	        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+	        //chart.bind(donutRangeSlider)
+	        chart.draw(data,options);
+
+		}
+    </script>
+	</head>
+	<body>
+		<div id="chart_div"></div>
+	</body>
+	</html>
