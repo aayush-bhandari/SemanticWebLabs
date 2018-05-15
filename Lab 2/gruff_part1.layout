@@ -1,0 +1,397 @@
+
+:gruff-layout
+(:zoom-divisor 1)
+(:canvas-size 58320 33312)
+(:scroll-position 20614 21542)
+(:triples
+ (((3 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>"
+   "<http://www.xfront.com/owl/ontologies/camera/#ThroughTheLens>"
+   :default-graph nil)
+  ((3 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>"
+   (2 0 0 0 241 39 118 28 0 0 0 8) :default-graph nil)
+  ((6 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Body>" :default-graph
+   nil)
+  ((6 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>"
+   (5 0 0 0 241 39 118 28 0 0 0 8) :default-graph nil)
+  ((2 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>"
+   "<http://www.xfront.com/owl/ontologies/camera/#WindowOnTopOfCamera>"
+   :default-graph nil)
+  ((2 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>" :default-graph
+   nil)
+  ((5 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>" :default-graph
+   nil)
+  ((5 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>"
+   (4 0 0 0 241 39 118 28 0 0 0 8) :default-graph nil)
+  ((8 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>" :default-graph
+   nil)
+  ((8 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>"
+   (7 0 0 0 241 39 118 28 0 0 0 8) :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#body>"
+   "<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>"
+   "<http://www.xfront.com/owl/ontologies/camera/#part>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#body>"
+   "<http://www.w3.org/2000/01/rdf-schema#range>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Body>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#body>"
+   "<http://www.w3.org/2000/01/rdf-schema#domain>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Camera>"
+   :default-graph nil)
+  ((9 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Camera>"
+   :default-graph nil)
+  ((9 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>"
+   (8 0 0 0 241 39 118 28 0 0 0 8) :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#focal-length>"
+   "<http://www.w3.org/2000/01/rdf-schema#range>"
+   "<http://www.w3.org/2001/XMLSchema#string>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#focal-length>"
+   "<http://www.w3.org/2002/07/owl#equivalentProperty>"
+   "<http://www.xfront.com/owl/ontologies/camera/#size>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#focal-length>"
+   "<http://www.w3.org/2000/01/rdf-schema#domain>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Lens>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#f-stop>"
+   "<http://www.w3.org/2000/01/rdf-schema#range>"
+   "<http://www.w3.org/2001/XMLSchema#string>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#f-stop>"
+   "<http://www.w3.org/2000/01/rdf-schema#domain>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Lens>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#f-stop>"
+   "<http://www.w3.org/2002/07/owl#equivalentProperty>"
+   "<http://www.xfront.com/owl/ontologies/camera/#aperture>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#lens>"
+   "<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>"
+   "<http://www.xfront.com/owl/ontologies/camera/#part>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#lens>"
+   "<http://www.w3.org/2000/01/rdf-schema#range>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Lens>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#lens>"
+   "<http://www.w3.org/2000/01/rdf-schema#domain>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Camera>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#BodyWithNonAdjustableShutterSpeed>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Class>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#BodyWithNonAdjustableShutterSpeed>"
+   "<http://www.w3.org/2002/07/owl#intersectionOf>"
+   (6 0 0 0 241 39 118 28 0 0 0 8) :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#shutter-speed>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#ObjectProperty>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#shutter-speed>"
+   "<http://www.w3.org/2000/01/rdf-schema#range>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Range>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#shutter-speed>"
+   "<http://www.w3.org/2000/01/rdf-schema#domain>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Body>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#min>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#DatatypeProperty>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#min>"
+   "<http://www.w3.org/2000/01/rdf-schema#domain>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Range>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#min>"
+   "<http://www.w3.org/2000/01/rdf-schema#range>"
+   "<http://www.w3.org/2001/XMLSchema#float>" :default-graph nil)
+  ((7 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Restriction>" :default-graph nil)
+  ((7 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/2002/07/owl#hasValue>"
+   "<http://www.xfront.com/owl/ontologies/camera/#ThroughTheLens>"
+   :default-graph nil)
+  ((7 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/2002/07/owl#onProperty>"
+   "<http://www.xfront.com/owl/ontologies/camera/#viewFinder>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#aperture>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#DatatypeProperty>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#aperture>"
+   "<http://www.w3.org/2000/01/rdf-schema#range>"
+   "<http://www.w3.org/2001/XMLSchema#string>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#aperture>"
+   "<http://www.w3.org/2000/01/rdf-schema#domain>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Lens>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#currency>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#DatatypeProperty>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#currency>"
+   "<http://www.w3.org/2000/01/rdf-schema#domain>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Money>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#currency>"
+   "<http://www.w3.org/2000/01/rdf-schema#range>"
+   "<http://www.w3.org/2001/XMLSchema#string>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Digital>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Class>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Digital>"
+   "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Camera>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#max>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#DatatypeProperty>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#max>"
+   "<http://www.w3.org/2000/01/rdf-schema#domain>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Range>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#max>"
+   "<http://www.w3.org/2000/01/rdf-schema#range>"
+   "<http://www.w3.org/2001/XMLSchema#float>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#cost>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#ObjectProperty>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#cost>"
+   "<http://www.w3.org/2000/01/rdf-schema#range>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Money>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#cost>"
+   "<http://www.w3.org/2000/01/rdf-schema#domain>"
+   "<http://www.xfront.com/owl/ontologies/camera/#PurchaseableItem>"
+   :default-graph nil)
+  ((10 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Restriction>" :default-graph nil)
+  ((10 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/2002/07/owl#onProperty>"
+   "<http://www.xfront.com/owl/ontologies/camera/#body>" :default-graph
+   nil)
+  ((10 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/2002/07/owl#allValuesFrom>"
+   "<http://www.xfront.com/owl/ontologies/camera/#BodyWithNonAdjustableShutterSpeed>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Window>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Class>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Window>"
+   "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+   "<http://www.w3.org/2002/07/owl#Thing>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#PurchaseableItem>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Class>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#PurchaseableItem>"
+   "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+   "<http://www.w3.org/2002/07/owl#Thing>" :default-graph nil)
+  ((4 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Restriction>" :default-graph nil)
+  ((4 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/2002/07/owl#cardinality>" "\"0\"" :default-graph
+   nil)
+  ((4 0 0 0 241 39 118 28 0 0 0 8)
+   "<http://www.w3.org/2002/07/owl#onProperty>"
+   "<http://www.xfront.com/owl/ontologies/camera/#shutter-speed>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#size>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#DatatypeProperty>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#size>"
+   "<http://www.w3.org/2000/01/rdf-schema#domain>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Lens>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#size>"
+   "<http://www.w3.org/2000/01/rdf-schema#range>"
+   "<http://www.w3.org/2001/XMLSchema#string>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#compatibleWith>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#ObjectProperty>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#compatibleWith>"
+   "<http://www.w3.org/2000/01/rdf-schema#range>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Body>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#compatibleWith>"
+   "<http://www.w3.org/2000/01/rdf-schema#domain>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Lens>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Camera>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Class>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Camera>"
+   "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+   "<http://www.xfront.com/owl/ontologies/camera/#PurchaseableItem>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Body>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Class>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Body>"
+   "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+   "<http://www.xfront.com/owl/ontologies/camera/#PurchaseableItem>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Money>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Class>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Money>"
+   "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+   "<http://www.w3.org/2002/07/owl#Thing>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Lens>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Class>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Lens>"
+   "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+   "<http://www.xfront.com/owl/ontologies/camera/#PurchaseableItem>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Large-Format>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Class>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Large-Format>"
+   "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+   (10 0 0 0 241 39 118 28 0 0 0 8) :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Large-Format>"
+   "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Camera>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Range>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Class>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Range>"
+   "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"
+   "<http://www.w3.org/2002/07/owl#Thing>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#units>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#DatatypeProperty>" :default-graph
+   nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#units>"
+   "<http://www.w3.org/2000/01/rdf-schema#domain>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Range>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#units>"
+   "<http://www.w3.org/2000/01/rdf-schema#range>"
+   "<http://www.w3.org/2001/XMLSchema#string>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#SLR>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Class>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#SLR>"
+   "<http://www.w3.org/2002/07/owl#intersectionOf>"
+   (9 0 0 0 241 39 118 28 0 0 0 8) :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Viewer>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#Class>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#Viewer>"
+   "<http://www.w3.org/2002/07/owl#oneOf>"
+   (3 0 0 0 241 39 118 28 0 0 0 8) :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#viewFinder>"
+   "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
+   "<http://www.w3.org/2002/07/owl#ObjectProperty>" :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#viewFinder>"
+   "<http://www.w3.org/2000/01/rdf-schema#domain>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Camera>"
+   :default-graph nil)
+  ("<http://www.xfront.com/owl/ontologies/camera/#viewFinder>"
+   "<http://www.w3.org/2000/01/rdf-schema#range>"
+   "<http://www.xfront.com/owl/ontologies/camera/#Viewer>"
+   :default-graph nil)))
+(:boxes
+ (((3 0 0 0 241 39 118 28 0 0 0 8) (20055 21902 50 23))
+  ((6 0 0 0 241 39 118 28 0 0 0 8) (20275 21526 50 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#WindowOnTopOfCamera>"
+   (19777 21695 70 53))
+  ((2 0 0 0 241 39 118 28 0 0 0 8) (19914 21764 50 23))
+  ("\"0\"" (20144 21376 19 23) (4 0 0 0 241 39 118 28 0 0 0 8))
+  ((5 0 0 0 241 39 118 28 0 0 0 8) (20109 21521 50 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#ThroughTheLens>"
+   (19943 21883 64 38))
+  ("<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>"
+   (19995 21656 27 23))
+  ((8 0 0 0 241 39 118 28 0 0 0 8) (20051 21752 50 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#body>"
+   (20336 21778 39 23))
+  ("<http://www.w3.org/2002/07/owl#Thing>" (20932 21549 43 23))
+  ("<http://www.w3.org/2001/XMLSchema#float>" (21236 21326 39 23))
+  ((9 0 0 0 241 39 118 28 0 0 0 8) (20194 21906 50 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#focal-length>"
+   (21018 21818 46 38))
+  ("<http://www.xfront.com/owl/ontologies/camera/#f-stop>"
+   (21061 21975 47 23))
+  ("<http://www.w3.org/2001/XMLSchema#string>" (21218 21837 44 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#part>"
+   (20319 22053 34 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#lens>"
+   (20581 22073 40 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#BodyWithNonAdjustableShutterSpeed>"
+   (20278 21582 94 53))
+  ("<http://www.xfront.com/owl/ontologies/camera/#shutter-speed>"
+   (20583 21346 55 38))
+  ("<http://www.xfront.com/owl/ontologies/camera/#min>"
+   (21113 21422 31 23))
+  ((7 0 0 0 241 39 118 28 0 0 0 8) (20126 21723 50 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#aperture>"
+   (21074 21890 58 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#currency>"
+   (21047 21642 61 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#Digital>"
+   (20626 21950 47 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#max>"
+   (21142 21327 33 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#cost>"
+   (20700 21469 38 23))
+  ((10 0 0 0 241 39 118 28 0 0 0 8) (20235 21673 57 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#Window>"
+   (20902 21707 56 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#PurchaseableItem>"
+   (20684 21549 89 38))
+  ("<http://www.w3.org/2002/07/owl#Restriction>" (20131 21630 71 23))
+  ((4 0 0 0 241 39 118 28 0 0 0 8) (20243 21436 50 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#size>"
+   (21048 21760 35 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#compatibleWith>"
+   (20560 21607 76 38))
+  ("<http://www.xfront.com/owl/ontologies/camera/#Camera>"
+   (20445 21938 57 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#Body>"
+   (20444 21477 39 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#Money>"
+   (20873 21622 47 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#Lens>"
+   (20868 21920 40 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#Large-Format>"
+   (20438 21747 51 38))
+  ("<http://www.xfront.com/owl/ontologies/camera/#Range>"
+   (20927 21366 49 23))
+  ("<http://www.w3.org/2002/07/owl#DatatypeProperty>"
+   (21262 21558 60 38))
+  ("<http://www.xfront.com/owl/ontologies/camera/#units>"
+   (21097 21561 41 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#SLR>"
+   (20283 21885 36 23))
+  ("<http://www.w3.org/2002/07/owl#Class>" (20628 21810 45 23))
+  ("<http://www.xfront.com/owl/ontologies/camera/#Viewer>"
+   (20237 21803 49 23))
+  ("<http://www.w3.org/2002/07/owl#ObjectProperty>"
+   (20567 21459 57 38))
+  ("<http://www.xfront.com/owl/ontologies/camera/#viewFinder>"
+   (20332 21685 76 23))))
