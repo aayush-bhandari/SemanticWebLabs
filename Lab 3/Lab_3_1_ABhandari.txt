@@ -1,0 +1,46 @@
+#Query 1
+
+prefix vCard: <http://www.w3.org/2001/vcard-rdf/3.0#>
+select ?s  where {
+  ?s vCard:FN "Jane Smith" .
+}
+-----------------------------------------------------------------------------------------
+#Query 2
+
+prefix ag: <http://somewhere/peopleInfo#>
+select  ?o where {
+  ?s ag:age ?o .
+}
+
+-----------------------------------------------------------------------------------------
+#Query 3
+
+prefix ag: <http://somewhere/peopleInfo#>
+prefix vCard: <http://www.w3.org/2001/vcard-rdf/3.0#>
+select ?s ?a ?o where {
+    ?s ag:age ?a.
+    ?s vCard:FN ?o.
+}
+
+-----------------------------------------------------------------------------------------
+#Query 4
+
+prefix ag: <http://somewhere/peopleInfo#>
+select ?s ?age where {
+  ?s ag:age ?age FILTER (?age = "23").
+  
+}
+
+-----------------------------------------------------------------------------------------
+#Query 5
+
+prefix vCard: <http://www.w3.org/2001/vcard-rdf/3.0#>
+prefix ag: <http://somewhere/peopleInfo#>
+
+select  ?s ?givenName  where {
+    ?s ag:age ?a.
+    ?s vCard:FN ?o.
+    ?s vCard:N _:blank.
+    _:blank vCard:Given ?givenName.
+}
+-----------------------------------------------------------------------------------------

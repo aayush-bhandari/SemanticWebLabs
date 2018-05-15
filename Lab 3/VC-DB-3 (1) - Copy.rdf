@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<rdf:RDF
+  xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+  xmlns:vCard='http://www.w3.org/2001/vcard-rdf/3.0#'
+  xmlns:info='http://somewhere/peopleInfo#'
+  xml:base='http://somewhere/peopleInfo#'
+>
+
+  <rdf:Description rdf:about="JaneSmith">
+    <vCard:FN>Jane Smith</vCard:FN>
+    <info:age>30</info:age>
+    <vCard:N rdf:parseType="Resource">
+      <vCard:Family>Smith</vCard:Family>
+      <vCard:Given>Jane</vCard:Given>
+    </vCard:N>
+    <vCard:TEL rdf:parseType="Resource">
+        <rdf:value>+44 117 555 6666</rdf:value>
+        <rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#work"/>
+        <rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#voice"/>
+      </vCard:TEL>
+    <vCard:TEL rdf:parseType="Resource">
+        <rdf:value>+44 117 555 8888</rdf:value>
+        <rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#home"/>
+        <rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#voice"/>
+      </vCard:TEL>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="RobertSmith">
+    <vCard:FN>Bobby Smith</vCard:FN>
+    <info:age>23</info:age>
+    <vCard:N rdf:parseType="Resource">
+      <vCard:Family>Smith</vCard:Family>
+      <vCard:Given>Bobby</vCard:Given>
+    </vCard:N>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="SarahParker">
+    <vCard:FN>Sarah Parker</vCard:FN>
+    <vCard:N rdf:parseType="Resource">
+      <vCard:Family>Parker</vCard:Family>
+      <vCard:Given>Sarah</vCard:Given>
+    </vCard:N>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="MattParker">
+    <vCard:FN>Matt Parker</vCard:FN>
+    <vCard:N rdf:parseType="Resource">
+       <vCard:Family>Parker</vCard:Family>
+        <vCard:Given>Matthew</vCard:Given>
+	</vCard:N>
+  </rdf:Description>
+
+</rdf:RDF>
